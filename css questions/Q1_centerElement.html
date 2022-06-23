@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="outer">
+      <div class="inner">aaaa</div>
+    </div>
+  </body>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    .outer {
+      width: 100vw;
+      height: 100vh;
+      background-color: #efefef;
+      /* your code here */
+      /* display: flex;
+  justify-content: center;
+  align-items: center; */
+      /* display: grid;
+  place-items: center; */
+      position: relative;
+    }
+
+    .inner {
+      width: 100px;
+      height: 100px;
+      background-color: #f44336;
+      /* your code here */
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</html>

@@ -1,0 +1,43 @@
+<!-- 
+    Please complete the CSS according to following requirements:
+
+    1.height 50px
+    2.set background to #eee, but if there are adjacent rows, set even rows' background to #ddd
+    3.set 1px border on top & bottom with color #ccc, but if there are adjacent rows, 
+        adjacent borders should be collapsed into one 
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .row {
+        width: 100%;
+        height: 50px;
+        background: #eee;
+        border-bottom: 1px solid #ccc;
+      }
+      .row:nth-child(2n) {
+        background-color: #ddd;
+      }
+      .row:first-child {
+        border-top: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">a</div>
+    <div class="row">a</div>
+    <div class="row">a</div>
+    <div class="row">a</div>
+    <div class="row">a</div>
+    <div class="row">a</div>
+  </body>
+</html>

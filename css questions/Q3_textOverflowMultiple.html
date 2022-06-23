@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="one-line">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+      consectetur venenatis blandit. Praesent vehicula, libero non pretium
+      vulputate, lacus arcu facilisis lectus, sed feugiat tellus nulla eu dolor.
+      Nulla porta bibendum lectus quis euismod. Aliquam volutpat ultricies
+      porttitor. Cras risus nisi, accumsan vel cursus ut, sollicitudin vitae
+      dolor. Fusce scelerisque eleifend lectus in bibendum. Suspendisse lacinia
+      egestas felis a volutpat.
+    </div>
+  </body>
+  <style>
+    .one-line {
+      /* your code here */
+      width: 100%;
+      /* 适用范围：Webkit浏览器及移动端*/
+      overflow: hidden;
+      display: -webkit-box;
+      /* 限制块元素中文本的显示行数，这里是3行 */
+      -webkit-line-clamp: 3;
+      /* 指定子元素按垂直方向排列 */
+      -webkit-box-orient: vertical;
+    }
+  </style>
+</html>

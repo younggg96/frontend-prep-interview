@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .modal {
+        display: none;
+        position: fixed;
+        overflow: hidden;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 999;
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+      .modal-content {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 100%;
+        max-height: 300px;
+        background-color: white;
+        box-shadow: 1px 1px 6px 4px rgb(223, 223, 223);
+      }
+      .modal-header {
+        background-color: #f44336;
+        width: 100%;
+        height: 50px;
+      }
+
+      .modal-body {
+        background-color: #2973af;
+        width: 100%;
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="openModal()">open</button>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consectetur
+    venenatis blandit. Praesent vehicula, libero non pretium vulputate, lacus
+    arcu facilisis lectus, sed feugiat tellus nulla eu dolor. Nulla porta
+    bibendum lectus quis euismod. Aliquam volutpat ultricies porttitor. Cras
+    risus nisi, accumsan vel cursus ut, sollicitudin vitae dolor. Fusce
+    scelerisque eleifend lectus in bibendum. Suspendisse lacinia egestas felis a
+    volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+    consectetur venenatis blandit. Praesent vehicula, libero non pretium
+    vulputate, lacus arcu facilisis lectus, sed feugiat tellus nulla eu dolor.
+    Nulla porta bibendum lectus quis euismod. Aliquam volutpat ultricies
+    porttitor. Cras risus nisi, accumsan vel cursus ut, sollicitudin vitae
+    dolor. Fusce scelerisque eleifend lectus in bibendum. Suspendisse lacinia
+    egestas felis a volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing
+    elit. Aliquam consectetur venenatis blandit.
+    <div class="modal" id="modal">
+      <div class="modal-content" id="modal-content">
+        <div class="modal-header"></div>
+        <div class="modal-body"></div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const modal = document.querySelector("#modal");
+    const modalContent = document.querySelector("#modal-content");
+    modal.addEventListener("click", (e) => {
+      if (e.target == modal) {
+        closeModal();
+      }
+    });
+    function openModal() {
+      modal.style.display = "block";
+    }
+    function closeModal() {
+      modal.style.display = "none";
+    }
+  </script>
+</html>
