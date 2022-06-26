@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pagination</title>
+    <style>
+      .pagination {
+        display: flex;
+        gap: 1rem;
+      }
+
+      .pagination-list {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+      }
+
+      .pagination-list li,
+      .pagination-btn {
+        width: 2rem;
+        height: 2rem;
+        line-height: 2rem;
+        text-align: center;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        cursor: pointer;
+        user-select: none;
+      }
+      .pagination-list li:hover,
+      .pagination-btn:hover {
+        color: white;
+        background-color: #ddd;
+      }
+
+      .pagination-list .active {
+        color: white;
+        background-color: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div class="content"></div>
+      <div class="pagination">
+        <div class="pagination-btn prev"><</div>
+        <div class="pagination-list"></div>
+        <div class="pagination-btn next">></div>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
