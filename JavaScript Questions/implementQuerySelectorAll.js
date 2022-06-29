@@ -17,7 +17,7 @@
 //     return result
 // }
 
-const q = (element, selector) {
+const q = (element, selector) => {
     const res = []
     const traverse = (node) => {
         if (!node) return
