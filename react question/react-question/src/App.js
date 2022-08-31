@@ -10,6 +10,8 @@ import { ExampleUseRef } from "./reactHooks/ExampleUseRef"
 import { ExampleUseRef2 } from "./reactHooks/ExampleUseRef2"
 import { ExampleUseRef3 } from "./reactHooks/ExampleUseRef3"
 import { ExampleUseImperativeHandle } from "./reactHooks/ExampleUseImperativeHandle"
+import { ExampleUseCallback } from "./reactHooks/ExampleUseCallback2"
+import { ExampleUseMemo } from "./reactHooks/ExampleUseMemo"
 
 function App() {
   const [time, setTime] = useState(0);
@@ -27,11 +29,13 @@ function App() {
       <ExampleUseReducer />
       <ExampleUseReducer2 />
       <ExampleUseContext />
-      <ExampleUseEffect /> */}
-      {/* <ExampleUseRef />
+      <ExampleUseEffect />
+      <ExampleUseRef />
       <ExampleUseRef2 />
-      <ExampleUseRef3 /> */}
+      <ExampleUseRef3 />
       <ExampleUseImperativeHandle />
+      <ExampleUseCallback /> */}
+      <ExampleUseMemo />
     </div>
   );
 }
