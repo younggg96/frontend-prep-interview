@@ -21,7 +21,6 @@ import { useCallback, useState } from "react";
 export const ExampleUseCallback = () => {
   const [count, setCount] = useState(0);
 
-  
 //通过useCallback，将鼠标点击处理函数保存到React底层原型链中，并获取该函数的引用，将引用赋值给clickHandler。
 
 // 只要依赖变量不发生变化，那么重新渲染时就可以一直使用之前创建的那个函数，达到阻止本次渲染，提升性能的目的。
