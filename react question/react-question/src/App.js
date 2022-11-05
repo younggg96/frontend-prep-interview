@@ -27,8 +27,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header"> Hello world </header>
-      {/* <Counter />
-      <ExampleUseState />
+      <Counter />
+      {/* <ExampleUseState />
       <ExampleUseReducer />
       <ExampleUseReducer2 />
       <ExampleUseContext />
@@ -38,7 +38,7 @@ function App() {
       <ExampleUseRef3 />
       <ExampleUseImperativeHandle />
       <ExampleUseCallback /> */}
-      <ExampleUseMemo />
+      {/* <ExampleUseMemo /> */}
 
       {/* usePrevious hooks */}
       {/* <button onClick = {() => {setCount(count + 1)}}>{`current: ${count}, before: ${prevCount}`}</button> */}
