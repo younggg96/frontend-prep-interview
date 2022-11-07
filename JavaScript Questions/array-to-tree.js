@@ -75,3 +75,26 @@ const arrayToTree = (data, pid) => {
 //       ]
 //     }
 //   ]
+
+const arrayToTree2 = (items) => {
+  const result = [];
+  const itemMap = {};
+  for (const item of items) {
+    itemMap[item.id] = { ...item, children: [] };
+  }
+  for (const item of items) {
+    const { id, pid } = item;
+    const treeItem = itemMap[id];
+    if (pid === 0) {
+      result.push(treeItem);
+    } else {
+      if (!itemMap[pid]) {
+        itemMap[pid] = {
+          children: [],
+        };
+      }
+      itemMap[pid].children.push(treeItem);
+    }
+  }
+  return result;
+};
