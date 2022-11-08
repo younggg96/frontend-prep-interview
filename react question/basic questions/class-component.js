@@ -1,4 +1,4 @@
-class B extends React.Component {
+class A extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -6,4 +6,4 @@ class B extends React.Component {
     return <div>hi</div>;
   }
 }
-export default B;
+export default A;

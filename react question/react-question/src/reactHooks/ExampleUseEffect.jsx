@@ -28,18 +28,21 @@ export const ExampleUseEffect = () => {
   // 类似于 class 组件的 componentDidMount 和 componentDidUpdate:
   useEffect(() => {
     document.title = `You clicked ${count} times`;
-
-    let timer = setInterval(() => {
+    console.log("componentDidMount");
+    // 在浏览器渲染结束后执行
+    // let timer = setInterval(() => {
       setCount(count + 1);
-    }, 1000);
+    // }, 1000);
     // setCount(count + 1);
 
+    // 在每次渲染产生的 effect 执行之前执行
     return () => {
       // 类似 componentWillUnmount
       // unmount events ...
-      clearInterval(timer); // 组件卸载、useEffect 更新 移除计时器
+      console.log("unmount");
+      // clearInterval(timer); // 组件卸载、useEffect 更新 移除计时器
     };
-  }, [count]);
+  }, []);
 
   return (
     <div>

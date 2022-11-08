@@ -13,6 +13,7 @@ import { ExampleUseImperativeHandle } from "./reactHooks/ExampleUseImperativeHan
 import { ExampleUseCallback } from "./reactHooks/ExampleUseCallback2";
 import { ExampleUseMemo } from "./reactHooks/ExampleUseMemo";
 import { usePrevious } from "./questions/usePreviousHooks/usePrevious"
+import Parent from "./questions/Communication/communicate";
 
 function App() {
   const [time, setTime] = useState(0);
@@ -27,12 +28,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header"> Hello world </header>
-      <Counter />
+      {/* <Counter /> */}
+      {/* <ExampleUseEffect /> */}
       {/* <ExampleUseState />
       <ExampleUseReducer />
       <ExampleUseReducer2 />
       <ExampleUseContext />
-      <ExampleUseEffect />
       <ExampleUseRef />
       <ExampleUseRef2 />
       <ExampleUseRef3 />
@@ -42,6 +43,8 @@ function App() {
 
       {/* usePrevious hooks */}
       {/* <button onClick = {() => {setCount(count + 1)}}>{`current: ${count}, before: ${prevCount}`}</button> */}
+
+      <Parent />
     </div>
   );
 }
