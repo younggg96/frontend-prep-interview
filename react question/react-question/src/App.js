@@ -15,6 +15,7 @@ import { ExampleUseMemo } from "./reactHooks/ExampleUseMemo";
 import { usePrevious } from "./questions/usePreviousHooks/usePrevious";
 import Parent from "./questions/Communication/communicate";
 import TicTacToe from "./components/TicTacToe/TicTacToe";
+import TreeView from "./components/FileSystem/FileSystem";
 
 const UseHookComponents = () => {
   const [time, setTime] = useState(0);
@@ -53,6 +54,7 @@ function App() {
     <div className="App">
       {/* <UseHookComponents /> */}
       {/* <TicTacToe /> */}
+      <TreeView />
     </div>
   );
 }
