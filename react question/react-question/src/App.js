@@ -12,22 +12,21 @@ import { ExampleUseRef3 } from "./reactHooks/ExampleUseRef3";
 import { ExampleUseImperativeHandle } from "./reactHooks/ExampleUseImperativeHandle";
 import { ExampleUseCallback } from "./reactHooks/ExampleUseCallback2";
 import { ExampleUseMemo } from "./reactHooks/ExampleUseMemo";
-import { usePrevious } from "./questions/usePreviousHooks/usePrevious"
+import { usePrevious } from "./questions/usePreviousHooks/usePrevious";
 import Parent from "./questions/Communication/communicate";
+import TicTacToe from "./components/TicTacToe/TicTacToe";
 
-function App() {
+const UseHookComponents = () => {
   const [time, setTime] = useState(0);
-
   // const [count, setCount] = useState(0);
   // const prevCount = usePrevious(count);
 
   // useTimeout(() => {
   //   console.log("useTimeout hooks");
   // }, 1000);
-
   return (
-    <div className="App">
-      <header className="App-header"> Hello world </header>
+    <>
+      {/* <header className="App-header"> Hello world </header> */}
       {/* <Counter /> */}
       {/* <ExampleUseEffect /> */}
       {/* <ExampleUseState />
@@ -44,7 +43,16 @@ function App() {
       {/* usePrevious hooks */}
       {/* <button onClick = {() => {setCount(count + 1)}}>{`current: ${count}, before: ${prevCount}`}</button> */}
 
-      <Parent />
+      {/* <Parent /> */}
+    </>
+  );
+};
+
+function App() {
+  return (
+    <div className="App">
+      {/* <UseHookComponents /> */}
+      {/* <TicTacToe /> */}
     </div>
   );
 }

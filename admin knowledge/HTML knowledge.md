@@ -79,3 +79,20 @@ sizes 就是指默认显示 128px, 如果视区宽度大于 360px, 则显示 340
 
 ### script标签放在header里和放在body底部里有什么区别？
 script 通常被放在 header 或者 body 标签中，但位置的不同对于页面的加载效果也不一样。
+
+### Cookie、sessionStorage、localStorage的区别
+共同点
+都是保存在浏览器端！
+
+区别
+1）cookie数据始终在同源的http请求中携带（即使不需要），即cookie在浏览器和服务器间来回传递；存储大小限制也不同，cookie数据不能超过4k，同时因为每次http请求都会携带cookie，所以cookie只适合保存很小的数据，如会话标识。
+而sessionStorage和localStorage不会自动把数据发给服务器，仅在本地保存。sessionStorage和localStorage 虽然也有存储大小的限制，但比cookie大得多，可以达到5M或更大。
+2） 数据有效期不同，sessionStorage：仅在当前浏览器窗口关闭前有效，自然也就不可能持久保持；localStorage：始终有效，窗口或浏览器关闭也一直保存，因此用作持久数据；cookie只在设置的cookie过期时间之前一直有效，即使窗口或浏览器关闭。
+3）作用域不同，sessionStorage不在不同的浏览器窗口中共享，即使是同一个页面；localStorage 在所有同源窗口中都是共享的；cookie也是在所有同源窗口中都是共享的。
+
+1）session和cookie有什么区别 ？
+建议答案 ： session是存储服务器端，cookie是存储在客户端，所以session的安全性比cookie高。获取session里的信息是通过存放在会话cookie里的session id获取的。而session是存放在服务器的内存中里，所以session里的数据不断增加会造成服务器的负担，所以会把很重要的信息存储在session中，而把一些次要东西存储在客户端的cookie里。
+session的信息是通过sessionid获取的，而sessionid是存放在会话cookie当中的，当浏览器关闭的时候会话cookie消失，所以sessionid也就消失了，但是session的信息还存在服务器端
+2）怎么给localStorage设置值，和获取值 ？
+设置值：localStorage.setItem(键，值)
+获取值：localStorage.getItem(键)
