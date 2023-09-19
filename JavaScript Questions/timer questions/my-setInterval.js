@@ -6,17 +6,29 @@
  * @returns clear func
  */
 function mySetInterVal(fn, a, b) {
-  let timer;
-  function setOneTimer(fn, a, b) {
+  // let timer;
+  // function setOneTimer(fn, a, b) {
+  //   timer = setTimeout(() => {
+  //     fn();
+  //     setOneTimer(fn, a + b, b);
+  //   }, a);
+  // }
+  // setOneTimer(fn, a, b);
+  // return () => {
+  //   clearTimeout(timer);
+  // };
+  let timer, count = 0;
+  function run() {
+    fn();
+    count++;
+    const newTime = a + b * count;
     timer = setTimeout(() => {
-      fn();
-      setOneTimer(fn, a + b, b);
-    }, a);
+      run();
+    }, newTime);
   }
-  setOneTimer(fn, a, b);
-  return () => {
-    clearTimeout(timer);
-  };
+  run();
+  return clearTimeout(timer);
+
 }
 
 //test

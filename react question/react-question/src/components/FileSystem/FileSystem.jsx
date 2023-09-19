@@ -41,7 +41,6 @@ const TreeView = ({ data, level = 0 }) => {
     <>
       {data.map((item, index) => {
         const level = item.id.length;
-        console.log()
         return (
           <div key={item.id}>
             <span>{"-".repeat(level)}</span>
@@ -60,8 +59,8 @@ const TreeView = ({ data, level = 0 }) => {
 
 export default function FileSystem() {
   return (
-    <div>
+    <>
       <TreeView data={treeData} />
-    </div>
+    </>
   );
 }
