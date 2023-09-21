@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>requestAnimationFrame</title>
+  </head>
+  <body>
+    <div
+      id="div"
+      style="
+        width: 100px;
+        height: 100px;
+        background-color: #000;
+        position: absolute;
+        left: 0;
+        top: 0;
+      "
+    ></div>
+
+    <script>
+      let divEle = document.getElementById("div");
+
+      const distance = 1500;
+      const timeCount = 3000;
+
+      // requestAnimationFrame的回调函数并不能被重复调用，这点和setInterval不同，它和setTimeout类似，
+      // 回调函数只能被调用一次，只不过setTimeout可以自定义调用时间， requestAnimationFrame的调用时间则是跟着系统的刷新频率走的，
+      // 所以在实现动画的时候，setTimeout比requestAnimationFrame更加灵活， requestAnimationFrame比setTimeout表现效果更加优秀。
+
+
+      // const intervalTime = 10;
+      // let runCount = timeCount / intervalTime;
+      // let moveValue = distance / runCount;
+      // function handler() {
+      //   let left = parseInt(divEle.style.left);
+      //   console.log(left, moveValue);
+      //   if (left >= distance) {
+      //     return;
+      //   }
+      //   divEle.style.left = left + moveValue + "px";
+      //   window.setTimeout(handler, intervalTime);
+      // }
+
+      // window.setTimeout(handler, intervalTime);
+
+      function handler(time) {
+        if (time > timeCount) {
+          time = timeCount;
+        }
+        divEle.style.left = (time * distance) / timeCount + "px";
+        window.requestAnimationFrame(handler);
+      }
+
+      window.requestAnimationFrame(handler);
+    </script>
+  </body>
+</html>
