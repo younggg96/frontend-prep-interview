@@ -197,3 +197,145 @@ tablist
     }
 </script>
 ```
+
+## 常见属性
+
+#### aria-label 给元素设置一段描述性的文字，可以由屏幕阅读器读出，它内部的文字将被忽略
+
+```
+<div aria-label="HullQin的自我介绍">
+你好，我是HullQin。
+</div>
+```
+
+上方这个div被选中时，屏幕阅读器会播报「HullQin的自我介绍」，而不会播报「你好，我是HullQin」
+
+#### role="button", 将元素标记为按钮。
+```
+<div role="button" onclick="alert(123)">
+哈哈
+</div>
+```
+上方这个div被选中时，屏幕阅读器会播报「哈哈，按钮」。但是没有role这个属性时，只会播报「哈哈」，视障用户并不知道它可以被点击。
+
+## 尽量使用Html5语义化标签
+在body中正确使用这些标签： 
+```
+<header>，<footer>，<article>，<section>，<p>，
+<div>，<span>，<img>，<aside>，<audio>，<canvas>，
+<datalist>，<details>，<embed>，<nav>，<output>，
+<progress>，<video>
+```
+ 等等。
+经典误区：给div设置onclick事件。
+有时候为了方便，你可能直接把div当作button了，并绑定了onclick事件。这是不对的，无障碍软件可能无法识别到它是有点击事件的，就不会播报出来。
+建议点击事件尽量只绑定在```<a>```或```<button>```这种原生clickable的元素上，而不是```<div>```上。
+
+## 隐藏无意义元素
+
+如果是无用元素（如不影响业务流程的logo、图片），在最内层的Dom结点设置aria-hidden="true"，或在一组无用元素的容器结点设置aria-hidden="true"。
+
+那么这些元素永远不会被激活（选中）了。
+
+## 打包(合并)密集内容
+针对密集的文字内容，需要打包阅读。什么意思呢？
+
+```
+<div>
+<div>名称：</div>
+<div>HullQin</div>
+</div>
+```
+
+这段话会被拆分为2个元素，「名称」和「HullQin」分别可以被选中和播报。这对视障群体并不友好，因为焦点多、密集，明明是同一块内容，却分散到2个焦点上，这不方便他们摸索整个页面。
+他们期望的结果是「名称：HullQin」，通过这样打包阅读，就把Key、Value绑定起来了，也减少了焦点数量。
+打包阅读，有以下几种方案：
+
+方案优点缺点【推荐】父结点设置aria-label，值为所有子结点内容拼接的字符串，子结点设置aria-hidden="true"兼容性最好维护成本高（若子结点需要动态改变，父结点的aria-label也需要随之改变）【推荐】父结点设置aria-labelledby，值为所有子结点的id（用空格拼接），子结点设置aria-hidden="true"，注意使用该方法，每个子结点都需要设置id维护成本低（若子结点需要动态改变，父结点无需变化）存在兼容性问题，低版本屏幕阅读器会忽略aria-labelledby或aria-describedby。【不推荐】父结点设置role="option"方式最简单option表明这是个select下拉框的选项，读屏软件会错误理解该控件的作用，部分安卓机会播报“单指双击即可执行”。
+
+## 管理焦点
+如果需要主动管理焦点（例如页面初始焦点放在大标题上、弹窗打开时切换焦点至弹窗标题、弹窗关闭时恢复之前的焦点位置），需要通过element.focus()方法来控制焦点，但只有```<button>、<a>```这种可交互结点才会被focus成功，```<div>```这种纯展示结点不会被focus，需要设置tabindex="-1"（不要设置为非负整数，非负整数会允许键盘通过tab激活该焦点），再设置样式outline:0（因为浏览器默认样式在结点focus时会有边框，样式选择器是:focus-visible）。
+注意事项：设置tabindex="-1"后，部分安卓手机会播报“单指双击即可执行”。
+
+## 弹窗
+需要给弹窗容器设置```aria-modal="true"```和```role="dialog"```。
+
+## 结点动态变更
+例如按钮状态可能会在js中变为disabled，注意最好直接用原生的disabled属性，否则，你还需要手动设置aria-disabled为true
+
+
+# outline
+https://juejin.cn/post/7216227563012833337
+
+Interactive elements
+
+HTML offers a selection of elements which help to create interactive user interface objects.
+
+detail dialog summary
+
+```
+<p>有outline</p>
+<details>
+    <summary>直接通过键盘展开！</summary>
+    <p>这里是具体的展开内容。</p> 
+    <p>这里是具体的展开内容。</p> 
+    <p>这里是具体的展开内容。</p> 
+</details>
+<p>无outline</p>
+<details class="outline-none">
+    <summary>直接通过键盘展开！</summary>
+    <p>这里是具体的展开内容。</p> 
+    <p>这里是具体的展开内容。</p> 
+    <p>这里是具体的展开内容。</p> 
+</details>
+
+<p>有outline</p>
+<a href="#">我是有 outline 的 a 标签</a> 
+<p>无outline</p>
+<div class="outline-none">
+  <a href="#">我是没有 outline 的 a 标签</p> 
+</div>
+```
+
+如果仅使用键盘浏览的话，可交互标签有 outline 用户才能知道自己当前操作到哪个位置了。
+
+# :focuse-visible
+
+:focuse-visible 是完全由浏览器决定是否需要展示突出样式的。也就是说，它区别于 :focus 最重要的一点就是，:focus 是匹配所有元素的聚焦状态， 而它 由浏览器来判断 是否需要展示聚焦状态
+```
+// html
+<p>1. 点击也会有 outline</p>
+<details class="focus">
+    <summary>直接通过键盘展开！</summary>
+    <p>这里是具体的展开内容。</p> 
+    <p>这里是具体的展开内容。</p> 
+    <p>这里是具体的展开内容。</p> 
+</details>
+<p>2. 点击没有 outline</p>
+<details class="focus-visible">
+    <summary>直接通过键盘展开！</summary>
+    <p>这里是具体的展开内容。</p> 
+    <p>这里是具体的展开内容。</p> 
+    <p>这里是具体的展开内容。</p> 
+</details>
+
+// css
+.focus summary:focus {
+  outline: 2px solid blueviolet;
+}
+
+.focus-visible summary:focus-visible {
+  outline: 2px solid blueviolet;
+}
+```
+
+我们可以发现，:focus 的样式在鼠标点击的时候也会触发（但在鼠标交互的时候我们并不需要凸显 outline），而 :focuse-visible 的样式仅仅在键盘操作的时候才会触发。这个时候这个伪类对我们来说就很有用了，因为大部分时候我们不需要在网站内容跟鼠标交互中去凸显元素的 outline。
+总结一下，我们可以简单的认为：:focus 在鼠标、键盘的操作下都会触发，:focuse-visible 仅仅在键盘操作的时候触发。但其实，最终决定是否为 :focuse-visible 状态的主要还是浏览器。
+
+# Button
+
+当我们点击完按钮后，按钮一直保持着 :focus 的状态，直到我们下一次操作鼠标、键盘的时候 :focus 的状态才消失。而这一点就很好的说明了，这是浏览器自己的行为，跟组件库无关，这是一个正常的交互。
+那既然明确了这是一个正常的交互，我们一起探讨一下为什么要这样设计呢？答案很明显，就是 a11y。因为我们无法确保我们的用户都是通过鼠标来访问的。
+假设现在有这么一个场景，一个长页面有好多个按钮，每个按钮点击完都会有一个表单弹窗，用户需要填写这些表单。我们可以通过 button 的 focus 状态来快速恢复当前的阅读上下文。
+
+通过 focus 状态，我们可以操作完 button1，通过 TAB 再操作 button2。假设 button 点击后没有 focus 状态，我们填写完弹窗再回到页面就无法恢复到当前的上下文环境了，就需要从 button1 开始，一个一个地按 TAB ...
