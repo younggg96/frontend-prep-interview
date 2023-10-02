@@ -26,4 +26,17 @@
  * @param {number[]} nums
  * @return {number}
  */
-var jump = function (nums) {};
+var jump = function (nums) {
+    const n = nums.length;
+    let end = 0; let far = 0; let jumps = 0;
+    for (let i = 0; i < n - 1; i++) {
+        far = Math.max(i + nums[i], far);
+        if (end == i) {
+            jumps++;
+            end = far;
+        }
+    }
+
+    return jumps;
+
+};
