@@ -40,6 +40,7 @@ function throttle(func, wait) {
   };
 }
 
+
 // const throttle = (fun, delay = 1000) => {
 //   let flag = true;
 //   return function (...args) {

@@ -77,7 +77,6 @@ const urls = [
   "https://jsonplaceholder.typicode.com/todos/10",
 ];
 const mq = new MultiRequest(urls, 3);
-console.log(mq);
 mq.run();
 setTimeout(() => {
   mq.add("url-10");
