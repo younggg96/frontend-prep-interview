@@ -32,11 +32,27 @@
  *     this.next = (next===undefined ? null : next)
  * }
  */
-/**
- * @param {ListNode} head
- * @param {number} k
- * @return {ListNode}
- */
 var rotateRight = function(head, k) {
-    
-};
+    if(!head) return head;
+    let count = 0, cur = head;
+    while(cur) {
+        count++;
+        cur = cur.next;
+    }
+    cur = head;
+    let l1 = head, l2= head;
+    k = k % count;
+    while(k-- > 0) {
+        l2 = l2.next;
+    }
+
+    while(l2.next) {
+        l1 = l1.next;
+        l2 = l2.next;
+    }
+    l2.next = head;
+    head = l1.next;
+    l1.next = null;
+
+    return head;
+}; 
