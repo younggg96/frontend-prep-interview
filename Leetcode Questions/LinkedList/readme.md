@@ -14,7 +14,7 @@
 ```
 3. 快慢指针
 快指针走两步，慢指针走一步
-找中点
+- 找中点
 ```
 mid node
 var middleNode = function(head) {
@@ -26,6 +26,23 @@ var middleNode = function(head) {
         fast = fast.next.next;
     }
     return slow
+};
+```
+- 找前第几步和后几步的node
+```
+var swapNodes = function (head, k) {
+    let l1 = head, l2 = head;
+    for (let i = 1; i < k; i++) l1 = l1.next;
+    let l3 = l1;
+    l1 = l1.next;
+    while (l1) {
+        l1 = l1.next;
+        l2 = l2.next;
+    }
+    const temp = l3.val;
+    l3.val = l2.val;
+    l2.val = temp;
+    return head;
 };
 ```
 
@@ -43,3 +60,13 @@ var reverseList = function(head) {
 };
 ```
 5. 删除节点
+6. 结合stack 和queue使用
+```
+const stack = [];
+let count = 0;
+while(node) {
+    stack.push(node);
+    node = node.next;
+    count++;
+}
+```
