@@ -8,14 +8,24 @@
 
 /**
  * @param {ListNode} head
- * @return {boolean}
+ * @return {ListNode}
  */
-var hasCycle = function(head) {
-    let slow = head, fast = head;
-    while(fast && fast.next) {
-        slow = slow.next;
-        fast = fast.next.next;
-        if(slow == fast) return true;
+var detectCycle = function (head) {
+  let fast = head,
+    slow = head;
+  while (fast && fast.next) {
+    slow = slow.next;
+    fast = fast.next.next;
+    if (fast === slow) {
+      break;
     }
-    return false;
+  }
+  slow = head;
+  if (!fast || !fast.next) return null;
+
+  while (fast !== slow) {
+    slow = slow.next;
+    fast = fast.next;
+  }
+  return fast;
 };
