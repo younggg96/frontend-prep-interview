@@ -34,4 +34,28 @@
  * @param {ListNode} head
  * @return {ListNode}
  */
-var swapPairs = function (head) {};
+var swapPairs = function (head) {
+  let dummy = { next: head };
+  let prev = dummy;
+  while (head && head.next) {
+    let n1 = head;
+    let n2 = head.next;
+
+    prev.next = n2;
+    n1.next = n2.next;
+    n2.next = n1;
+
+    prev = n1;
+    head = n1.next;
+  }
+  return dummy.next;
+};
+
+var swapPairs2 = function (head) {
+  if (!head || !head.next) return head;
+  const next = head.next;
+  head.next = swapPairs(next.next);
+  next.next = head;
+
+  return next;
+};
