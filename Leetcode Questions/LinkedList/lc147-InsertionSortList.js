@@ -36,4 +36,25 @@
  * @param {ListNode} head
  * @return {ListNode}
  */
-var insertionSortList = function (head) {};
+var insertionSortList = function (head) {
+    let dummy = { next: head }
+    let cur = head, p = dummy;
+    while (cur && cur.next) {
+        if (cur.next.val >= cur.val) {
+            cur = cur.next;
+            continue;
+        }
+        while (cur.next.val > p.next.val && p.next != cur) {
+            p = p.next;
+        }
+        let temp = cur.next;
+        cur.next = cur.next.next;
+
+        temp.next = p.next;
+        p.next = temp;
+
+        p = dummy;
+    }
+
+    return dummy.next;
+};
