@@ -1,7 +1,5 @@
 // Given an integer array nums which is sorted in ascending order and all of its elements are unique and given also an integer k, return the kth missing number starting from the leftmost number of the array.
 
- 
-
 // Example 1:
 
 // Input: nums = [4,7,9,10], k = 1
@@ -17,7 +15,6 @@
 // Input: nums = [1,2,4], k = 3
 // Output: 6
 // Explanation: The missing numbers are [3,5,6,7,...], hence the third missing number is 6.
- 
 
 // Constraints:
 
@@ -31,6 +28,20 @@
  * @param {number} k
  * @return {number}
  */
-var missingElement = function(nums, k) {
-    
+var missingElement = function (nums, k) {
+  let left = 0;
+  let right = nums.length - 1;
+
+  while (left <= right) {
+    const mid = Math.floor((left + right) / 2);
+    const missingCount = nums[mid] - mid - nums[0];
+
+    if (missingCount < k) {
+      left = mid + 1;
+    } else {
+      right = mid - 1;
+    }
+  }
+
+  return right + k + nums[0];
 };

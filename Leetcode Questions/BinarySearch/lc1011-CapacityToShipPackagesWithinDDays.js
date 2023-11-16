@@ -4,8 +4,6 @@
 
 // Return the least weight capacity of the ship that will result in all the packages on the conveyor belt being shipped within days days.
 
- 
-
 // Example 1:
 
 // Input: weights = [1,2,3,4,5,6,7,8,9,10], days = 5
@@ -35,7 +33,6 @@
 // 2nd day: 2
 // 3rd day: 3
 // 4th day: 1, 1
- 
 
 // Constraints:
 
@@ -47,6 +44,48 @@
  * @param {number} days
  * @return {number}
  */
-var shipWithinDays = function(weights, days) {
-    
+/**
+ * @param {number[]} weights
+ * @param {number} days
+ * @return {number}
+ */
+var shipWithinDays = function (weights, days) {
+  const needDays = (capacity) => {
+    let day = 0;
+    for (let i = 0; i < weights.length; ) {
+      let cap = capacity;
+      while (i < weights.length) {
+        if (cap < weights[i]) {
+          break;
+        } else {
+          cap -= weights[i];
+        }
+        i++;
+      }
+      day++;
+    }
+    return day;
+  };
+
+  let l = 0,
+    r = 1,
+    index = 0;
+  while (index < weights.length) {
+    l = Math.max(l, weights[index]);
+    r += weights[index];
+    index++;
+  }
+
+  while (l < r) {
+    let mid = Math.floor((l + r) / 2);
+    if (days === needDays(mid)) {
+      r = mid;
+    } else if (days > needDays(mid)) {
+      r = mid;
+    } else {
+      l = mid + 1;
+    }
+  }
+
+  return l;
 };
