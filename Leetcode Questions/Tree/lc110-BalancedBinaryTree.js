@@ -12,7 +12,7 @@
  */
 
 var isBalanced = function (root) {
-    if (!root || (!root.left && !root.right)) return true;
+    if (!root) return true;
     const getDepth = (node) => {
         if (!node) return 0;
         return Math.max(getDepth(node.left), getDepth(node.right)) + 1;
