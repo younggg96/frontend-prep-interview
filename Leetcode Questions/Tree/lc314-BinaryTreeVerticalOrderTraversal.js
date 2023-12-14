@@ -24,7 +24,6 @@ var verticalOrder = function (root) {
     }
     m = Array.from(m.entries());
     m.sort((a, b) => a[0] - b[0]);
-    console.log(m)
     return m.map(x => x[1])
 
 };
