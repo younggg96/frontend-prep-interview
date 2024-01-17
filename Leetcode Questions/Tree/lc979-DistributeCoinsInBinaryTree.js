@@ -28,6 +28,20 @@
  * @param {TreeNode} root
  * @return {number}
  */
-var distributeCoins = function(root) {
-    
+var distributeCoins = function (root) {
+    let res = 0;
+    const dfs = (node) => {
+        if (!node) return { nodes: 0, coins: 0 };
+        const left = dfs(node.left);
+        const right = dfs(node.right);
+        res += Math.abs(left.nodes - left.coins) + Math.abs(right.nodes - right.coins);
+        return { nodes: left.nodes + right.nodes + 1, coins: left.coins + right.coins + node.val };
+    }
+    dfs(root)
+    return res;
 };
+
+
+// 考虑每条边上的金币“流量”，如果当前节点u的某个子树v中，有x枚金币，y个节点。若x>y，
+// 说明节点v到u要流上来x-y个金币；若x<y，说明节点u要往v流下去y-x个金币。
+// 因此，我们可以DFS求得每条边的流量，树中所有边的流量之和就是总的移动次数。
