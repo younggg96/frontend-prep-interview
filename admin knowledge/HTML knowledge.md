@@ -61,6 +61,11 @@ sizes 就是指默认显示 128px, 如果视区宽度大于 360px, 则显示 340
 行内元素有：a b span img input select strong；
 块级元素有：div ul ol li dl dt dd h1 h2 h3 h4 h5 h6 p；
 
+块级元素：
+独占一行；元素的宽高、以及内外边距都可设置；元素宽度在不设置的情况下，是它本身父容器的100%。
+行内元素：
+不会自动进行换行；元素的宽高不可设置；内边距可以设置、外边距水平方向有效，竖直方向无效；元素宽度在不设置的情况下，随内部元素的内容变化。
+
 空元素，即没有内容的HTML元素。空元素是在开始标签中关闭的，也就是空元素没有闭合标签：
 
 常见的有：<br>、<hr>、<img>、<input>、<link>、<meta>；
@@ -85,7 +90,7 @@ script 通常被放在 header 或者 body 标签中，但位置的不同对于�
 都是保存在浏览器端！
 
 区别
-1）cookie数据始终在同源的http请求中携带（即使不需要），即cookie在浏览器和服务器间来回传递；存储大小限制也不同，cookie数据不能超过4k，同时因为每次http请求都会携带cookie，所以cookie只适合保存很小的数据，如会话标识。
+1）cookie数据始终在同源的http请求中携带（即使不需要），即cookie在浏览器和服务器间来回传递；存储大小限制也不同，cookie数据不能超 。
 而sessionStorage和localStorage不会自动把数据发给服务器，仅在本地保存。sessionStorage和localStorage 虽然也有存储大小的限制，但比cookie大得多，可以达到5M或更大。
 2） 数据有效期不同，sessionStorage：仅在当前浏览器窗口关闭前有效，自然也就不可能持久保持；localStorage：始终有效，窗口或浏览器关闭也一直保存，因此用作持久数据；cookie只在设置的cookie过期时间之前一直有效，即使窗口或浏览器关闭。
 3）作用域不同，sessionStorage不在不同的浏览器窗口中共享，即使是同一个页面；localStorage 在所有同源窗口中都是共享的；cookie也是在所有同源窗口中都是共享的。
