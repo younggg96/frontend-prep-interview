@@ -16,22 +16,22 @@
 
 // curriedJoin(1, 2)(3) // '1_2_3'
 
-/**
- * @param { (...args: any[]) => any } fn
- * @returns { (...args: any[]) => any }
- */
-function curry(fn) {
-  return function curryInner(...args) {
-    if (args.length >= fn.length) return fn(...args);
-    return (...args2) => curryInner(...args, ...args2);
-  };
-}
+// /**
+//  * @param { (...args: any[]) => any } fn
+//  * @returns { (...args: any[]) => any }
+//  */
+// function curry(fn) {
+//   return function curryInner(...args) {
+//     if (args.length >= fn.length) return fn(...args);
+//     return (...args2) => curryInner(...args, ...args2);
+//   };
+// }
 
-const join = (a, b, c) => {
-  return `${a}_${b}_${c}`;
-};
+// const join = (a, b, c) => {
+//   return `${a}_${b}_${c}`;
+// };
 
-const curriedJoin = curry(join);
+// const curriedJoin = curry(join);
 // console.log(curriedJoin(1, 2)(3));
 
 // curriedJoin(1, 2, 3); // '1_2_3'
@@ -40,7 +40,8 @@ const curriedJoin = curry(join);
 
 // curriedJoin(1, 2)(3); // '1_2_3'
 
-// 所谓函数柯里化，其实就是把一个接受多个参数的函数，转变成接受一个单一参数，且返回接受剩余参数并能返回结果的新函数的技术。举个最简单的例子：
+// 所谓函数柯里化，其实就是把一个接受多个参数的函数，转变成接受一个单一参数，
+// 且返回接受剩余参数并能返回结果的新函数的技术。举个最简单的例子：
 
 // const add = (a, b) => a + b;
 // add(1, 2);
@@ -56,24 +57,24 @@ const curriedJoin = curry(join);
 // 说到底，函数柯里化的概念其实也离不开闭包，函数A接受一个参数（闭包中的自由变量）且返回一个新函数B（闭包），
 // 而函数A明明已执行并释放，当函数B执行时依旧能访问A函数当时所接参数。
 
-const addCurry = (a) => (b) => a + b;
+// const addCurry = (a) => (b) => a + b;
 
-const addCurry2 = (a) => {
-  return (b) => {
-    return a + b;
-  };
-};
+// const addCurry2 = (a) => {
+//   return (b) => {
+//     return a + b;
+//   };
+// };
 
-// addCurry2(1)(2);
-// console.log(addCurry2(1)(2));
+// // addCurry2(1)(2);
+// // console.log(addCurry2(1)(2));
 
-const addCurry3 = function (a) {
-  return function (b) {
-    return function (c) {
-      return a + b + c;
-    };
-  };
-};
+// const addCurry3 = function (a) {
+//   return function (b) {
+//     return function (c) {
+//       return a + b + c;
+//     };
+//   };
+// };
 
 // addCurry(1, 2, 3);
 // addCurry(1, 2)(3);
@@ -87,16 +88,37 @@ const addCurry3 = function (a) {
 // addCurry(1)(2)(3, 4);
 // addCurry(1)(2)(3, 4)(5)(6, 7);
 
-const join2 = (...a) => {
-  const str = a.reduce((pre, cur) => pre + `_${cur}`);
-  const func = (...b) => join2(str, ...b);
-  func.toString = () => {
-    return str;
-  }
-  return func;
-};
+// const join2 = (...a) => {
+//   const str = a.reduce((pre, cur) => pre + `_${cur}`);
+//   const func = (...b) => join2(str, ...b);
+//   func.toString = () => {
+//     return str;
+//   }
+//   return func;
+// };
 
 // console.log(join2(1, 2, 3, 4, 5, 6));
 
 // const curriedJoin2 = curry(join2);
-console.log(""+join2(1)(2)(3)(4));
+// console.log(""+join2(1)(2)(3)(4));
+
+const join = (a, b, c) => {
+  return `${a}_${b}_${c}`;
+};
+
+console.log(join.length);
+
+const curriedJoin = curry(join);
+
+function curry(fn) {
+  // your code here
+  const curryInner = (...args) => {
+    if (args.length >= fn.length) return fn(...args);
+    return (...args2) => curryInner(...args, ...args2);
+  };
+  return curryInner;
+}
+
+curriedJoin(1, 2, 3); // '1_2_3'
+curriedJoin(1)(2, 3); // '1_2_3'
+curriedJoin(1, 2)(3); // '1_2_3'
