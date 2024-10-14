@@ -8,47 +8,100 @@
 // 使用时间戳实现
 // 使用时间戳，当触发事件的时候，我们取出当前的时间戳，然后减去之前的时间戳(最一开始值设为 0)，
 // 如果大于设置的时间周期，就执行函数，然后更新时间戳为当前的时间戳，如果小于，就不执行。
-function throttle(func, wait) {
-  let context, args;
-  let previous = 0;
 
-  return function () {
-    let now = +new Date();
-    context = this;
-    args = arguments;
-    if (now - previous > wait) {
-      func.apply(context, args);
-      previous = now;
-    }
-  };
-}
+function throttle(func, delay) {
+  let timeout = null;
+  let lastArgs = null;
 
-// 使用定时器实现
-// 当触发事件的时候，我们设置一个定时器，再触发事件的时候，如果定时器存在，就不执行，
-// 直到定时器执行，然后执行函数，清空定时器，这样就可以设置下个定时器。
-function throttle(func, wait) {
-  let timeout;
-  return function () {
-    const context = this;
-    const args = arguments;
+  return function (...args) {
+    // 如果没有正在进行的定时器，则立即执行函数
     if (!timeout) {
-      timeout = setTimeout(function () {
+      func(...args);
+      // 设置冷却定时器
+      timeout = setTimeout(() => {
+        // 清除定时器
         timeout = null;
-        func.apply(context, args);
-      }, wait);
+        // 如果在冷却时间内有新的调用，执行最后一次调用
+        if (lastArgs) {
+          func(...lastArgs);
+          lastArgs = null;
+        }
+      }, delay);
+    } else {
+      // 如果在冷却时间内有新的调用，记录最后一次调用的参数
+      lastArgs = args;
     }
   };
 }
 
+// function throttle(func, wait) {
+//   let context, args;
+//   let previous = 0;
 
-// const throttle = (fun, delay = 1000) => {
-//   let flag = true;
+//   return function () {
+//     let now = +new Date();
+//     context = this;
+//     args = arguments;
+//     if (now - previous > wait) {
+//       func.apply(context, args);
+//       previous = now;
+//     }
+//   };
+// }
+
+// // 使用定时器实现
+// // 当触发事件的时候，我们设置一个定时器，再触发事件的时候，如果定时器存在，就不执行，
+// // 直到定时器执行，然后执行函数，清空定时器，这样就可以设置下个定时器。
+// function throttle(func, wait) {
+//   let timeout;
+//   return function () {
+//     const context = this;
+//     const args = arguments;
+//     if (!timeout) {
+//       timeout = setTimeout(function () {
+//         timeout = null;
+//         func.apply(context, args);
+//       }, wait);
+//     }
+//   };
+// }
+
+// const throttle = (func, delay) => {
+//   let timer = null;
+//   let lastArgs = null;
+
 //   return function (...args) {
-//     if (!flag) return;
-//     flag = false;
-//     setTimeout(() => {
-//       fun.apply(this, args);
-//       flag = true;
-//     }, delay);
+//     if(!timer) {
+//       func(args);
+//       timer = setTimeout(() => {
+//         timer = null;
+//         if(lastArgs) {
+//           func(lastArgs);
+//           lastArgs = null;
+//         }
+//       }, delay)
+//     } else {
+//       lastArgs = args;
+//     }
 //   };
 // };
+
+const throttle = (func, delay) => {
+  let timer = null;
+  let lastArgs = null;
+
+  return function (...args) {
+    if (!timer) {
+      func(args);
+      timer = setTimeout(() => {
+        timer = null;
+        if (lastArgs) {
+          func(lastArgs);
+          lastArgs = null;
+        }
+      }, delay);
+    } else {
+      lastArgs = args;
+    }
+  };
+};
