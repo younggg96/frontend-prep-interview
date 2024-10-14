@@ -145,3 +145,8 @@ function checkscope() {
 // var fn = checkscope();
 
 checkscope()()
+
+
+// Closure is a common term in JavaScript.
+
+// The definition is easy, but you should explain well on details about how closure works.
