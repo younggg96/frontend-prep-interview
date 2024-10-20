@@ -1,5 +1,6 @@
-### script 标签中 defer 和 async 的区别
 
+
+### script 标签中 defer 和 async 的区别
 如果没有 defer 或 async 属性，浏览器会立即加载并执行相应的脚本。它不会等待后续加载的文档元素，读取到就会开始加载和执行，这样就阻塞了后续文档的加载。
 
 defer 和 async 属性都是去异步加载外部的 JS 脚本文件，它们都不会阻塞页面的解析，其区别如下：
@@ -13,7 +14,7 @@ meta 标签由 name 和 content 属性定义，用来描述网页文档的属性
 常用的 meta 标签：
 （1）charset，用来描述 HTML 文档的编码类型：
 
-<meta charset="UTF-8" >
+<meta charset="UTF-8">
 （2） keywords，页面关键词：
 <meta name="keywords" content="关键词" />
 （3）description，页面描述：
