@@ -20,8 +20,8 @@
 // A value to use as this when executing callbackFn.
 
 Array.prototype.myMap = function (callback, thisArg) {
-  const length = this.length
-  const result = new Array(length)
+  const length = this.length;
+  const result = new Array(length);
 
   for (let i = 0; i < length; i++) {
     if (i in this) {

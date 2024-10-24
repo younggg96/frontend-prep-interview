@@ -29,10 +29,15 @@
             }
         }
         const inputHandler = createInputText();
-        
+
         document.querySelector('#input').addEventListener('input', inputHandler);
         const list = document.querySelector('#list');
 
+        list.addEventListener('click', (e) => {
+            if (e.target.nodeName.toLowerCase() === 'li') {
+                console.log(e.target.innerHTML);
+            }
+        })
     </script>
 </body>
 
