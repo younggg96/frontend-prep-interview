@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+  </head>
+  <body>
+    <div>Test Page</div>
+    <pre id="log"></pre>
+    <script>
+      //   console.log("Start!");
+      //   setTimeout(() => {
+      //     console.log("Timeout!");
+      //   }, 0);
+      //   Promise.resolve("Promise!").then((result) => {
+      //     console.log(result);
+      //   });
+      //   console.log("End!");
+
+      //   let logElem = document.getElementById("log");
+      //   let log = (s) => (logElem.innerHTML += s + "<br>");
+
+      //   let callback = () => log("Regular timeout callback has run");
+
+      //   let urgentCallback = () =>
+      //     log("*** Oh noes! An urgent callback has run!");
+
+      //   log("Main program started");
+      //   setTimeout(callback, 0);
+      //   queueMicrotask(urgentCallback);
+      //   log("Main program exiting");
+
+      //   const promise = Promise.resolve("from promise");
+      //   const thenPromise = promise.then((result) => {
+      //     console.log(result);
+      //   });
+      //   console.log(promise);
+      //   // Promise {
+      //   //   [[PromiseState]]: 'fulfilled',
+      //   //   [[PromiseResult]]: 'from promise',
+      //   // }
+      //   console.log(thenPromise);
+      //   // Promise {
+      //   //   [[PromiseState]]: 'pending',
+      //   //   [[PromiseResult]]: undefined,
+      //   // }
+      //   setTimeout(() => {
+      //     console.log(thenPromise);
+      //   });
+      // Promise {
+      //   [[PromiseState]]: 'fulfilled',
+      //   [[PromiseResult]]: undefined,
+      // }
+
+      //   async function sleep(ms = 2000) {
+      //     return new Promise((resolve) => {
+      //       setTimeout(resolve, ms);
+      //     });
+      //   }
+
+      //   async function run() {
+      //     for (const value of ["后盾人", "向军"]) {
+      //       await sleep();
+      //       console.log(value);
+      //     }
+      //   }
+      //   run();
+
+      //   const promise = Promise.resolve("promise");
+      //   const thenPromise = promise.then((result) => {
+      //     return new Promise((resolve, reject) => {
+      //       setTimeout(() => {
+      //         resolve("resolved promise returned by then handler");
+      //         console.log('33');
+      //       }, 3000);
+      //     });
+      //   });
+      //   setTimeout(() => {
+      //     console.log(thenPromise); // Promise {<pending>}
+      //   });
+      //   setTimeout(() => {
+      //     console.log(thenPromise);
+      //     // Promise {<fulfilled>: "resolved promise returned by then handler"}
+      //   }, 4000);
+
+      const promise1 = Promise.resolve(3);
+      const promise2 = 42;
+      const promise3 = new Promise((resolve, reject) => {
+        setTimeout(resolve, 100, "foo");
+      });
+
+      Promise.all([promise1, promise2, promise3]).then((values) => {
+        console.log(values);
+      });
+    </script>
+  </body>
+</html>
