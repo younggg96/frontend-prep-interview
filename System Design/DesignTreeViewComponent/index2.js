@@ -58,7 +58,9 @@ const TreeView = (nodes) => {
 };
 
 const App = () => {
-  return <div class="app">
-    <TreeView  nodes={treeData}/>
-  </div>;
+  return (
+    <div class="app">
+      <TreeView nodes={treeData} />
+    </div>
+  );
 };

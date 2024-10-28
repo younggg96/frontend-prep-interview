@@ -69,39 +69,38 @@ var leastInterval = function (tasks, n) {
   let ans = 0;
 
   for (let i = 0; i < tasks.length; i++) {
-      if (map.has(tasks[i])) {
-          map.set(tasks[i], map.get(tasks[i]) + 1);
-      } else {
-          map.set(tasks[i], 1);
-      }
+    if (map.has(tasks[i])) {
+      map.set(tasks[i], map.get(tasks[i]) + 1);
+    } else {
+      map.set(tasks[i], 1);
+    }
   }
   for (let item of map) {
-      maxHeap.enqueue(item[0], item[1]);
+    maxHeap.enqueue(item[0], item[1]);
   }
 
   while (!maxHeap.isEmpty()) {
-      let taskOperationCount = 0;
-      for (let i = 0; i < n + 1; i++) {
-          if (!maxHeap.isEmpty()) {
-              let item = maxHeap.dequeue().element;
-              map.set(item, map.get(item) - 1);
-              queue.push(item);
-              taskOperationCount++;
-          }
-
-      }
-      while (queue.length > 0) {
-          let item = queue.shift();
-          if (map.get(item) > 0) {
-              maxHeap.enqueue(item, map.get(item));
-          }
-      }
-
+    let taskOperationCount = 0;
+    for (let i = 0; i < n + 1; i++) {
       if (!maxHeap.isEmpty()) {
-          ans = ans + n + 1;
-      } else {
-          ans = ans + taskOperationCount;
+        let item = maxHeap.dequeue().element;
+        map.set(item, map.get(item) - 1);
+        queue.push(item);
+        taskOperationCount++;
       }
+    }
+    while (queue.length > 0) {
+      let item = queue.shift();
+      if (map.get(item) > 0) {
+        maxHeap.enqueue(item, map.get(item));
+      }
+    }
+
+    if (!maxHeap.isEmpty()) {
+      ans = ans + n + 1;
+    } else {
+      ans = ans + taskOperationCount;
+    }
   }
   return ans;
 };

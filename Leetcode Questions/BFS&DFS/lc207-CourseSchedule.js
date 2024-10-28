@@ -44,6 +44,40 @@
  * @param {number[][]} prerequisites
  * @return {boolean}
  */
-var canFinish = function(numCourses, prerequisites) {
-    
-};
+function canFinish(numCourses, prerequisites) {
+    // 初始化邻接表和入度表
+    const graph = Array.from({ length: numCourses }, () => []);
+    const inDegree = Array(numCourses).fill(0);
+
+    // 构建图和记录每个节点的入度
+    for (const [dest, src] of prerequisites) {
+        graph[src].push(dest);
+        inDegree[dest]++;
+    }
+
+    // 将所有入度为 0 的节点加入队列
+    const queue = [];
+    for (let i = 0; i < numCourses; i++) {
+        if (inDegree[i] === 0) {
+            queue.push(i);
+        }
+    }
+
+    let visited = 0;  // 记录已访问节点数
+
+    while (queue.length > 0) {
+        const course = queue.shift();
+        visited++;
+
+        // 遍历当前课程的邻接节点
+        for (const neighbor of graph[course]) {
+            inDegree[neighbor]--;  // 入度减 1
+            if (inDegree[neighbor] === 0) {  // 如果入度为 0，加入队列
+                queue.push(neighbor);
+            }
+        }
+    }
+
+    // 如果所有节点都被访问过，则无环
+    return visited === numCourses;
+}
