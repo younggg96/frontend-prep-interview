@@ -20,6 +20,27 @@
 // Output: 3
 // Explanation: F(4) = F(3) + F(2) = 2 + 1 = 3.
 
+// Approach 1 - Recursion
+// Time: O(2^n)
+// Space: O(n)
+function fib(n) {
+  if (n < 2) return n;
+  return fib(n-1) + fib(n-2);
+}
+// Approach 2 - Memoized Recursion
+// Time: O(n)
+// Space: O(n)
+function fib(n) {
+  const cache = {};
+  function memo(n) {
+    if (n < 2) return n;
+    cache[n] ??= memo(n-1) + memo(n-2);
+    return cache[n];
+  }
+  return memo(n);
+}
+
+
 /**
  * @param {number} n
  * @return {number}
@@ -32,13 +53,13 @@ var fib = function (n) {
 
 var fib = function (n) {
   const memo = new Array(n + 1).fill(0);
-  const fibMemo = (memo, n) => {
-    if (n === 1 || n === 0) return n;
+  const fibMemo = (n) => {
+    if (n < 2) return n;
     if (memo[n] !== 0) return memo[n];
-    memo[n] = fibMemo(memo, n - 1) + fibMemo(memo, n - 2);
+    memo[n] = fibMemo(n - 1) + fibMemo(n - 2);
     return memo[n];
   };
-  return fibMemo(memo, n);
+  return fibMemo(n);
 };
 
 var fib = function (n) {
