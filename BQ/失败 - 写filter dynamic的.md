@@ -1,0 +1,7 @@
+在一次项目中，我被要求实现一个能够动态生成子类别的筛选功能，需求方希望筛选项能根据不同条件实时调整。然而，最初我对需求的动态性理解不够深入，在没有与需求方确认细节的情况下，直接实现了一个预定义的筛选方式，设定了固定的筛选选项，导致运行时出现了与需求不符的错误。
+
+意识到问题后，我首先与需求方和团队进行了深入的沟通，确认了需求的具体含义，确保我们对“动态筛选”的理解一致。然后，我重新设计了筛选逻辑，使筛选项能够根据用户输入和数据变化进行动态更新。通过这次经历，我不仅加强了对需求分析的重视，也意识到在项目初期和过程中进行充分沟通的重要性。这种反复的确认和沟通，有助于避免误解，并确保项目顺利推进。
+
+In a project, I was tasked with implementing a filter feature that could dynamically generate subcategories, allowing options to adjust based on various conditions. Initially, however, I didn’t fully understand the dynamic nature of this requirement and proceeded with a predefined filter method without confirming specific details with the stakeholders. This approach led to runtime issues and didn’t align with the intended functionality.
+
+After identifying the issue, I engaged in in-depth discussions with both the stakeholders and the team to ensure we had a shared understanding of what "dynamic filtering" meant. This clarified the requirements and helped me align my implementation approach. I then redesigned the filtering logic to allow options to update dynamically based on user inputs and data changes. This experience taught me the importance of thorough requirements analysis and clear communication from the outset and reinforced the need for regular check-ins throughout the project to avoid misalignment and ensure smooth progress.
