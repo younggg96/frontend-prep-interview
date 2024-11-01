@@ -4,7 +4,7 @@
 
 最终，我们成功按时交付了一个功能齐全的可视化版本，满足了演示需求，客户对结果非常满意。团队的主动沟通和合理的优先级管理在这一过程中发挥了关键作用。这次经历让我深刻认识到，在时间紧迫的情况下，合理规划、任务优先级管理和团队协作对于按时交付高质量成果的重要性。
 
-There was a time when I was assigned to complete a data visualization feature for a users dashboard under a tight deadline, as a product demo was approaching. The feature required real-time data visualization from multiple sources, making it complex with very little room for error given the time constraints.
+There was a time when I was assigned to complete a data visualization feature for a users dashboard under a tight deadline, as a product demo was approaching. This feature needed real-time data visualization from different sources, which made it pretty complex, and with the tight deadlines, there wasn’t much room for mistakes.
 
 To meet the deadline, I broke the project into smaller tasks and prioritized the core visualization components, ensuring we would have a demo-ready version. I work together closely with the team, use jira to tracking project progress and handle every issues immediately. I used pre-built visualization libraries instead of coding the charts from scratch, which allowed us to focus more on data processing and API integration that do help us save a lot time.
 
