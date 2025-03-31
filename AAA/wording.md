@@ -34,3 +34,21 @@ Thank you for considering my application. I would be thrilled to discuss how my 
 
 Sincerely,
 Guanggeng Yang
+
+
+
+What front-end languages and frameworks do you have the most experience working with?
+I have the most experience working with JavaScript, TypeScript, and frameworks like React, Next.js, and Vue.js. I am skilled in building complex, scalable applications using modern tools such as Tailwind CSS, Redux, Zustand, and Shadcn UI. I also have experience with Angular and React Native for cross-platform development.
+
+"I am drawn to Stripe for three key reasons:
+
+1. Mission & Impact:
+I'm passionate about revolutionizing online payments because I believe financial infrastructure should be accessible to everyone. Stripe's work in creating seamless payment solutions particularly excites me as it enables global commerce.
+
+2. Technical Innovation:
+As a frontend engineer, I'm impressed by Stripe's elegant developer experience and API design. My experience building scalable React applications aligns perfectly with Stripe's frontend architecture, and I'm excited about contributing to making complex payment systems more intuitive.
+
+3. Growth & Culture:
+Stripe's emphasis on engineering excellence and documentation resonates with my professional values. Having led the migration of legacy systems to modern frameworks, I believe I can both contribute to and grow with the team.
+
+I'm excited about the opportunity to help build the future of online payments at Stripe."
