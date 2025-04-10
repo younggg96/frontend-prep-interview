@@ -4,7 +4,7 @@ linkedin: https://www.linkedin.com/in/guanggengyang/
 
 github: https://github.com/younggg96
 
-protoflio: https://guanggeng-website.web.app/
+protoflio: https://guanggengyang.info
 
 company: Vibrant Wellness
 
