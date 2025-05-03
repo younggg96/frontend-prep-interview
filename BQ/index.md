@@ -4,7 +4,7 @@ b)        Why this company
 c)        Why this position / this team
 d)        Why leave your last position
 e)        Walk me through your typical day at work.
-
+w
 2.        Failure
 a)        Tell me a time when you failed on something
 b)        Tell me a time when you made a mistake
@@ -94,3 +94,56 @@ h)        Why did you think that decision was appropriate
 i)        Do you think you could have done better
 j)        How did you find / fix this problem
 k)        How deep did you track down the problem
+
+1. I'm a frontend developer with around 5 years of experience. I'm currently working at Vibrant Wellness, where I'm responsible for building an e-commerce platform in the medical field. Recently, I've been leading the migration of a large Vue 2 codebase to a modern React and Next.js stack. I focus on building clean, reusable UI components, optimizing performance, and improving SEO. As a team lead, I also enjoy mentoring junior developers through documentation, code reviews, and hands-on support. Now, I'm looking for a new opportunity where I can continue to grow and contribute to impactful projects.
+
+2. Why are you looking for a new opportunity?
+Answer:
+I’ve learned a lot in my current role, especially around frontend architecture and team collaboration. But I’m ready for something new—something more technically challenging, where I can move faster, work closely with product teams, and build things that really make an impact. I’m also excited about learning from strong engineers and contributing to larger-scale systems.
+
+3. Tell me about a time when you had to work under a tight deadline.
+Answer:
+Situation: We had a marketing campaign launching in 3 days, but the landing page wasn’t complete.
+Task: I was responsible for implementing the responsive layout and SEO optimizations.
+Action: I worked with the designer to clarify visuals, used pre-built components to speed up development, and implemented Lighthouse checks early.
+Result: We delivered on time, and the campaign achieved a 30% higher conversion rate than previous ones.
+
+4. Describe a time when you had a conflict with a teammate.
+Answer:
+Situation: A teammate and I disagreed over the implementation of a global state solution.
+Task: We needed to choose between Redux and Zustand within a short time.
+Action: I proposed a tech review session where we compared pros/cons and ran a quick POC for both.
+Result: We aligned on Zustand, reduced boilerplate by 40%, and the discussion improved team trust.
+
+5. Tell me about a time you failed or made a mistake.
+Answer:
+Situation: I once built a filter component based on hardcoded category values, misunderstanding the requirement.
+Task: It was meant to be dynamic and server-driven.
+Action: I quickly refactored the component to fetch options via API and added fallback behavior.
+Result: The fix was deployed within the same sprint. It taught me to ask clarifying questions early and review requirements in more detail.
+
+6. How do you prioritize tasks when you have multiple deadlines?
+Answer:
+I usually start by listing all tasks, clarifying deadlines and impact. I use a priority matrix to separate urgent vs important items. For time-sensitive tasks, I communicate early with stakeholders if trade-offs are needed. I also break work into smaller deliverables and track progress using Jira or Notion to stay organized and transparent.
+
+7. Tell me about a time you received critical feedback. How did you react?
+Answer:
+Situation: In a code review, a senior engineer pointed out that my PR lacked unit tests and had inconsistent naming.
+Action: I thanked them, revised the PR with better test coverage and naming conventions, and added a pre-commit linter to avoid similar issues.
+Result: My future PRs were cleaner and got approved faster. It helped me level up my code quality and professionalism.
+
+8. How do you stay up to date with industry trends or new technologies?
+Answer:
+I follow blogs like CSS-Tricks, Smashing Magazine, and the official React and Next.js blogs. I also subscribe to newsletters like Frontend Focus and watch conference talks on YouTube. For hands-on practice, I regularly build side projects and test new tools like AI integrations, new frameworks, or design systems.
+
+9. Tell me about a time you took initiative.
+Answer:
+Situation: Our product detail page had performance issues, but no one was assigned to optimize it.
+Action: I investigated using Chrome DevTools, lazy-loaded images, split bundles with dynamic imports, and optimized critical rendering paths.
+Result: Page load time dropped by 40%, and bounce rates decreased. My work became a reference for optimizing other pages.
+
+10. What are your strengths and weaknesses?
+Answer:
+Strengths: I’m proactive, highly organized, and passionate about writing maintainable code. I often take initiative on improvements even when not assigned.
+Weaknesses: I used to be overly perfectionist, spending too much time fine-tuning non-critical parts. I’ve learned to focus more on impact and align with business priorities.
+
