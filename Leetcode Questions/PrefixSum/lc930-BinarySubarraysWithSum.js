@@ -20,3 +20,25 @@
 // 1 <= nums.length <= 3 * 10^4
 // nums[i] is either 0 or 1.
 // 0 <= goal <= nums.length 
+
+/**
+ * @param {number[]} nums
+ * @param {number} goal
+ * @return {number}
+ */
+var numSubarraysWithSum = function(nums, goal) {
+    let count = 0;
+    let pre = 0;
+    const map = new Map();
+
+    map.set(0, 1);
+
+    for(let i = 0; i < nums.length; i++) {
+        pre += nums[i];
+        if(map.has(pre - goal)) {
+            count += map.get(pre - goal);
+        }
+        map.set(pre, (map.get(pre) || 0) + 1);
+    }
+    return count;
+};

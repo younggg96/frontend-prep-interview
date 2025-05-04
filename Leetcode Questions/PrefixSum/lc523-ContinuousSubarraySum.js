@@ -23,3 +23,32 @@
 // 0 <= nums[i] <= 10^9
 // 0 <= sum(nums[i]) <= 2^31 - 1
 // 1 <= k <= 2^31 - 1 
+
+/**
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {boolean}
+ */
+var checkSubarraySum = function (nums, k) {
+    const map = new Map();
+    map.set(0, -1);
+    let pre = 0;
+
+    // Handle the case when k is 0
+    for (let i = 0; i < nums.length; i++) {
+        
+        pre += nums[i];
+        // if map has the same pre % k, check if the distance is at least 2
+        // if not, set the map with the current index
+        if (map.has(pre % k)) {
+            // if the distance is at least 2, return true
+            if(i - map.get(pre % k) >= 2) {
+                return true;
+            }
+        } else {
+            map.set(pre % k, i)
+        }
+    }
+
+    return false
+};
