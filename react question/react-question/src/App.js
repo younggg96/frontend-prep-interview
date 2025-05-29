@@ -5,17 +5,18 @@ import { ExampleUseReducer } from "./reactHooks/ExampleUseReducer";
 import { ExampleUseReducer2 } from "./reactHooks/ExampleUseReducer2";
 import { ExampleUseContext } from "./reactHooks/ExampleUseContext";
 import { ExampleUseEffect } from "./reactHooks/ExampleUseEffect";
-import { useTimeout } from "./questions/useTimeoutHooks/useTimeout";
+import { useTimeout } from "./questions/useTimeout";
 import { ExampleUseRef } from "./reactHooks/ExampleUseRef";
 import { ExampleUseRef2 } from "./reactHooks/ExampleUseRef2";
 import { ExampleUseRef3 } from "./reactHooks/ExampleUseRef3";
 import { ExampleUseImperativeHandle } from "./reactHooks/ExampleUseImperativeHandle";
-import { ExampleUseCallback } from "./reactHooks/ExampleUseCallback2";
+import { ExampleUseCallback } from "./reactHooks/ExampleUseCallback";
 import { ExampleUseMemo } from "./reactHooks/ExampleUseMemo";
-import { usePrevious } from "./questions/usePreviousHooks/usePrevious";
-import Parent from "./questions/Communication/communicate";
+import { usePrevious } from "./questions/usePrevious";
+import Parent from "./questions/Communicate";
 import TicTacToe from "./components/TicTacToe/TicTacToe";
 import FileSystem from "./components/FileSystem/FileSystem";
+import { ExampleUseCallback2 } from "./reactHooks/ExampleUseCallback2";
 
 const UseHookComponents = () => {
   const [time, setTime] = useState(0);
@@ -27,6 +28,9 @@ const UseHookComponents = () => {
   // }, 1000);
   return (
     <>
+      <ExampleUseCallback />
+      <ExampleUseCallback2 />
+      <ExampleUseMemo />
       {/* <header className="App-header"> Hello world </header> */}
       {/* <Counter /> */}
       {/* <ExampleUseEffect /> */}
@@ -52,7 +56,7 @@ const UseHookComponents = () => {
 function App() {
   return (
     <div className="App">
-      {/* <UseHookComponents /> */}
+      <UseHookComponents />
       {/* <TicTacToe /> */}
       {/* <FileSystem /> */}
     </div>
