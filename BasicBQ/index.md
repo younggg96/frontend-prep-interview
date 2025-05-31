@@ -5,9 +5,15 @@ Can you briefly walk me through your background?
 What are you currently working on?
 I'm a frontend developer with around 5 years of experience. I'm currently working at Vibrant Wellness, where I'm responsible for building an e-commerce platform in the medical field. Recently, I've been leading the migration of a large Vue 2 codebase to a modern React and Next.js stack. I focus on building clean, reusable UI components, optimizing performance, and improving SEO. As a team lead, I also enjoy mentoring junior developers through documentation, code reviews, and hands-on support. Now, I'm looking for a new opportunity where I can continue to grow and contribute to impactful projects.
 
-Why are you looking for new opportunities?
+I'm the lead frontend developer at vw.  I have been here for 4 years. I am the founding developer for our entire front end web application. I led the design and development of our entire web app, such as the product and product detail page, payment, checkout, user authenication page, user profile and more. I am also experienced with UI framework migration. I helped VW to migrade its UI system from Vue 2 to react and next.js. As you can see, I am experienced with UI, UI design, Javascript, react, nextJS and other UI realated technologies. if you are interested in any specific part of my experiences, we can start from there.
+
+Why are you looking for new opportunities? why are you looking for new job? why do you want to join OKX
 
 I’ve learned a lot in my current role, especially around frontend architecture and team collaboration. But I’m ready for something new—something more technically challenging, where I can move faster, work closely with product teams, and build things that really make an impact. I’m also excited about learning from talented engineers and contributing to larger-scale systems.
+
+As I just said, I have been at VW for more than 4 years. I led the design and development of our entire web appilication. At this point in my career at VW, my job duties have become less challenging and more repetitive. I often found myself doing the same thing every day and did not have time to learn new technologies. So it is time for me to look outside opportunities to further my skill sets and career. I heard from Scott, who is also working at OKX, that OKX is looking for a front end developer. He told me about the fast pacing environment at OKX. I think it would be a perfect opportunity for me to challenge myself and learn more cutting edge technologies
+
+
 
 Are you actively interviewing elsewhere?
 
@@ -53,6 +59,10 @@ In my current role at Vibrant Wellness, I’ve been leading the rebuild of a com
 4. 项目经验
 Can you describe a project you're proud of?
 
+
+one of my proudest project is the web application I designed and developed at VW. I am the tech lead on this project and led a team of 3 to design and developed the current UI web application and brought it to production. in this project, I designed and worked on most of the major features such as the xxx pages and xxx pagesx... I still can remeber the moment that the web app went live and how proud and happy I felt.
+
+
 One project I’m really proud of is a mobile app I built at Alexander Anderson Real Estate. The goal was to help users prepare for and get their real estate licenses. I built the entire front end using React Native, including features like learning modules, progress tracking, and scheduling.
 
 It was a solo project on the front-end side, so I got to own everything—from designing the UI to integrating with the backend and making sure it worked smoothly on both iOS and Android. Seeing the app go from concept to something real that people used and gave positive feedback on was really rewarding.
@@ -64,7 +74,7 @@ Have you worked in fast-paced or startup environments?
 5. 行为和团队协作
 Do you prefer working independently or collaboratively?
 
-I enjoy both, honestly. I’m very comfortable working independently—I’ve led projects where I handled the full front end on my own, like the mobile app I built using React Native. But I also really enjoy working collaboratively, especially in cross-functional teams. On my current project, I work closely with backend engineers, designers, and product managers to make sure everything fits together well. So for me, the ideal setup is a mix of both—focused solo time and good team communication.
+honestly, I enjoy both. I’m very comfortable working independently—I have led projects where I handled the full front end on my own, like the mobile app I built using React Native at Alexander-Anderson. At Alexander Anderson, I was the only developer there. for whatever project I work on, I need to do everything and by myself. I deisgned, developed and maintained the mobile app. I also worked on the deployment of the mobile app. basically i was not just a front end developer but more a full stack. But i enjoy front end developing more. so at vw, I become the tech lead here. I work closely and collaboratively with 3 other devlopers. I also work in cross-functional teams. I work closely with backend engineers, designers, and product managers to make sure everything fits together well. So for me, the ideal setup is a mix of both—focused solo time and good team communication.
 
 How do you handle deadlines or shifting priorities?
 
@@ -75,7 +85,7 @@ Yes, I’ve mentored junior developers on my team—helping them get up to speed
 6. 职位匹配 & 未来规划
 What are you looking for in your next role?
 
-I’m looking for a role where I can take on more technical ownership and work on meaningful, complex products. I enjoy working with modern front-end technologies, and I’d love to be part of a team that values good engineering practices and collaboration. It’s also important to me that the work has real-world impact, which is why this role really fit me
+I’m looking for a role where I can take on more technical ownership and work on more complex products. I enjoy working with modern front-end technologies, and I’d love to be part of a team that values good engineering practices and collaboration. It’s also important to me that the work has real-world impact, which is why this role really fit me.
 
 What does an ideal team or project look like for you?
 
