@@ -3,36 +3,24 @@
 1. 背景 & 当前状态
 Can you briefly walk me through your background?
 What are you currently working on?
-I'm a frontend developer with around 5 years of experience. I'm currently working at Vibrant Wellness, where I'm responsible for building an e-commerce platform in the medical field. Recently, I've been leading the migration of a large Vue 2 codebase to a modern React and Next.js stack. I focus on building clean, reusable UI components, optimizing performance, and improving SEO. As a team lead, I also enjoy mentoring junior developers through documentation, code reviews, and hands-on support. Now, I'm looking for a new opportunity where I can continue to grow and contribute to impactful projects.
 
-I'm the lead frontend developer at vw.  I have been here for 4 years. I am the founding developer for our entire front end web application. I led the design and development of our entire web app, such as the product and product detail page, payment, checkout, user authenication page, user profile and more. I am also experienced with UI framework migration. I helped VW to migrade its UI system from Vue 2 to react and next.js. As you can see, I am experienced with UI, UI design, Javascript, react, nextJS and other UI realated technologies. if you are interested in any specific part of my experiences, we can start from there.
+I'm the lead frontend developer at vw.  I have been here for 4 years. I am the founding developer for our entire front end web application. I led the design and development of our entire web app, such as the product and product detail page, payment, checkout, user authenication page, user profile and more. I am also experienced with UI framework migration. I helped VW to migrade its UI framework from Vue 2 to react and next.js. As you can see, I am experienced with  Javascript, react, nextJS, vue and other UI realated technologies. if you are interested in any specific part of my experiences, we can start from there.
 
-Why are you looking for new opportunities? why are you looking for new job? why do you want to join OKX
-
-I’ve learned a lot in my current role, especially around frontend architecture and team collaboration. But I’m ready for something new—something more technically challenging, where I can move faster, work closely with product teams, and build things that really make an impact. I’m also excited about learning from talented engineers and contributing to larger-scale systems.
+Why are you looking for new opportunities? why are you looking for new job?
 
 As I just said, I have been at VW for more than 4 years. I led the design and development of our entire web appilication. At this point in my career at VW, my job duties have become less challenging and more repetitive. I often found myself doing the same thing every day and did not have time to learn new technologies. So it is time for me to look outside opportunities to further my skill sets and career. I heard from Scott, who is also working at OKX, that OKX is looking for a front end developer. He told me about the fast pacing environment at OKX. I think it would be a perfect opportunity for me to challenge myself and learn more cutting edge technologies
 
 
-
-Are you actively interviewing elsewhere?
-
-Yes, I’m speaking with a few companies right now, but I’m still exploring and trying to find the best fit—for both the team and the kind of work I want to grow into. I’m genuinely interested in this opportunity, and I’d love to learn more about how your team works.
-
 2. 对公司的兴趣
 What attracted you to this role/company?
 
-Yeah, I was really interested in this role because it involves building complex front-end applications, which is something I enjoy and have experience with. I’ve worked a lot with React and Angular, so the tech stack feels like a great fit. Also, the chance to work with a smart, cross-functional team at here sounds exciting. I’m always looking to grow by working on meaningful and technically challenging projects.
-
-
-How did you hear about us?
-
-I came across the role while browsing job openings related to front-end development, and the description really stood out. I also recognized X as part of Alphabet, and that definitely caught my attention because I’ve always been interested in working on ambitious, impactful tech projects.
-
+I’m really excited about this role because it fits my background in frontend architecture and performance work. I’ve been leading projects that focus on speed, scalability, and clean design, and your company seems like a place where I can keep growing while working on meaningful products. I also like that you value collaboration—working with a strong team is important to me.
 
 What do you know about our company or product?
 
-I know that X is Alphabet’s innovation lab, focused on solving big, global problems. I saw that the Tapestry project is working on improving the electric grid using technology and data, which sounds both meaningful and technically interesting. I’m still learning more, but it seems like a really unique space to work
+Yeah! I know that OKX is one of the top global crypto exchanges, and you're also doing a lot in the Web3 space—like DeFi, NFTs, and wallets.
+I really admire how you're building a fast, scalable platform for millions of users. As someone who cares about performance and frontend architecture, I find that super exciting.
+
 
 3. 技术能力（轻量评估）
 What’s your strongest programming language or framework?
@@ -40,12 +28,6 @@ What’s your strongest programming language or framework?
 Do you focus more on frontend, backend, or fullstack?
 
 Have you worked with [React/TypeScript/Next.js/etc.]?
-
-data visualization （Google Maps APIs & D3）
-Yes, I’ve worked with several data visualization tools. For example, I used Google Maps APIs to build an order tracking feature where users could see their delivery status and location updates in real time. I’ve also used D3 for custom charts when I needed more control over interactivity and design.
-
-Unit test
-Yes, I write unit tests regularly, especially for reusable components and important business logic. In my current and past projects, I’ve used tools like Jest for React and Jasmine + Karma when working with Angular. I try to keep tests isolated, test both typical and edge cases, and mock dependencies as needed. I also focus on writing tests that are meaningful—not just for coverage, but to catch regressions and ensure confidence during refactors.
 
 Have you built products from scratch or worked on large systems?
 
@@ -56,22 +38,32 @@ Yes, I’ve built products from scratch and also worked on large-scale systems. 
 
 In my current role at Vibrant Wellness, I’ve been leading the rebuild of a complex e-commerce platform in the healthcare space, migrating it from Vue 2 to React and Next.js. So I’ve had experience working on both new mobile apps and large enterprise web systems.
 
-4. 项目经验
-Can you describe a project you're proud of?
 
+4. 项目经验
+Can you tell me about a project you worked on recently?
+（可以介绍一个你最近做过的项目吗？）
+Sure! One of the most impactful projects I worked on was at Vibrant Wellness. I led the frontend rearchitecture of their e-commerce platform from the ground up. The old system was built with Vue 2 and had issues like slow builds, poor SEO, and inconsistent UI.
+I redesigned the architecture using React, Next.js, and Tailwind CSS, and implemented SSR and SSG for better performance and SEO. We also introduced component-based development and reusable patterns, which helped improve team efficiency and code quality.
+As the frontend tech lead, I handled everything from architecture planning to mentoring junior devs. Within three months of launch, organic traffic went up by 30%. I’m proud because I took ownership from zero to launch and made a measurable business impact.
+
+Can you describe a project you're proud of?
 
 one of my proudest project is the web application I designed and developed at VW. I am the tech lead on this project and led a team of 3 to design and developed the current UI web application and brought it to production. in this project, I designed and worked on most of the major features such as the xxx pages and xxx pagesx... I still can remeber the moment that the web app went live and how proud and happy I felt.
 
-
-One project I’m really proud of is a mobile app I built at Alexander Anderson Real Estate. The goal was to help users prepare for and get their real estate licenses. I built the entire front end using React Native, including features like learning modules, progress tracking, and scheduling.
-
-It was a solo project on the front-end side, so I got to own everything—from designing the UI to integrating with the backend and making sure it worked smoothly on both iOS and Android. Seeing the app go from concept to something real that people used and gave positive feedback on was really rewarding.
-
 Have you ever worked on a 0 → 1 project?
-
 Have you worked in fast-paced or startup environments?
 
+Can you tell me about a project you worked on recently?
+
+Sure! One of the most impactful projects I worked on was at Vibrant Wellness. I led the frontend rearchitecture of their e-commerce platform from the ground up. The old system was built with Vue 2 and had issues like slow builds, poor SEO, and inconsistent UI.
+I redesigned the architecture using React, Next.js, and Tailwind CSS, and implemented SSR and SSG for better performance and SEO. We also introduced component-based development and reusable patterns, which helped improve team efficiency and code quality.
+As the frontend tech lead, I handled everything from architecture planning to mentoring junior devs. Within three months of launch, organic traffic went up by 30%. I’m proud because I took ownership from zero to launch and made a measurable business impact.
+
 5. 行为和团队协作
+Can you describe your working style in a team?
+I’m a collaborative and transparent team player. I like to align early on goals and scope, and I make sure to communicate clearly during standups and code reviews. I enjoy pair programming when needed, and I often help break down tasks so the team can move faster. I also value feedback—both giving and receiving—because it helps us improve together.
+
+
 Do you prefer working independently or collaboratively?
 
 honestly, I enjoy both. I’m very comfortable working independently—I have led projects where I handled the full front end on my own, like the mobile app I built using React Native at Alexander-Anderson. At Alexander Anderson, I was the only developer there. for whatever project I work on, I need to do everything and by myself. I deisgned, developed and maintained the mobile app. I also worked on the deployment of the mobile app. basically i was not just a front end developer but more a full stack. But i enjoy front end developing more. so at vw, I become the tech lead here. I work closely and collaboratively with 3 other devlopers. I also work in cross-functional teams. I work closely with backend engineers, designers, and product managers to make sure everything fits together well. So for me, the ideal setup is a mix of both—focused solo time and good team communication.
@@ -105,5 +97,3 @@ My workflow’s pretty balanced. I usually start by checking tasks and syncing w
 
 ### prioritize your work - impact & urgency
 If I have a bunch of tasks, I usually look at what’s most urgent or what’s blocking others, and start there. If priorities aren’t super clear, I’ll check in with the PM to make sure I’m working on the right thing. I try not to juggle too many things at once—breaking down big features helps me stay focused and make progress without feeling overwhelmed
-
-### 
