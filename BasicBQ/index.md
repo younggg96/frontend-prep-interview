@@ -4,7 +4,7 @@
 Can you briefly walk me through your background?
 What are you currently working on?
 
-I'm the lead frontend developer at vw.  I have been here for 4 years. I am the founding developer for our entire front end web application. I led the design and development of our entire web app, such as the product and product detail page, payment, checkout, user authenication page, user profile and more. I am also experienced with UI framework migration. I helped VW to migrade its UI framework from Vue 2 to react and next.js. As you can see, I am experienced with  Javascript, react, nextJS, vue and other UI realated technologies. if you are interested in any specific part of my experiences, we can start from there.
+I'm the lead frontend developer at vw.  I have been here for 4 years. I am the founding developer for our entire front end web application. I led the design and development of our entire web app, such as E-Commerce Core Features  the product and product detail page, payment, checkout, user authenication page, user profile and more. I am also experienced with UI framework migration. I helped VW to migrade its UI framework from Vue 2 to react and next.js. As you can see, I am experienced with  Javascript, react, nextJS, vue and other UI realated technologies. if you are interested in any specific part of my experiences, we can start from there.
 
 Why are you looking for new opportunities? why are you looking for new job?
 
