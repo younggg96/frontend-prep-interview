@@ -24,11 +24,8 @@ I really admire how you're building a fast, scalable platform for millions of us
 
 3. 技术能力（轻量评估）
 What’s your strongest programming language or framework?
-
 Do you focus more on frontend, backend, or fullstack?
-
 Have you worked with [React/TypeScript/Next.js/etc.]?
-
 Have you built products from scratch or worked on large systems?
 
 Yes, I’ve done both. In my current role, I helped rebuild a large e-commerce platform in the medical field—starting from scratch, migrating it from Vue 2 to a modern stack with React and Next.js. I was involved in setting up the architecture, building reusable components, and integrating APIs. I've also worked on large legacy systems where I had to understand existing codebases and gradually refactor or extend them without breaking things.
@@ -80,14 +77,11 @@ What are you looking for in your next role?
 I’m looking for a role where I can take on more technical ownership and work on more complex products. I enjoy working with modern front-end technologies, and I’d love to be part of a team that values good engineering practices and collaboration. It’s also important to me that the work has real-world impact, which is why this role really fit me.
 
 What does an ideal team or project look like for you?
-
 Are you open to in-office / remote / hybrid work?
-
 What are your compensation expectations?
-
 When would you be available to start?
 
-I’m open to discussing that based on the role’s responsibilities and the overall compensation package. From my research and experience level, I’d expect $180,000 base, but I’m flexible depending on equity, bonus.
+I’m open to discussing that based on the role’s responsibilities and the overall compensation package. From my research and experience level, I’d expect $200,000 base, but I’m flexible depending on equity, bonus.
 
 
 ### workflow
