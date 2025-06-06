@@ -3,7 +3,7 @@
 **Can you briefly walk me through your background?**
 **What are you currently working on?**
 
-I'm the lead frontend developer at vw. I have been here for 4 years. I am the founding developer for our entire front end web application. I led the design and development of our entire web app, such as the product and product detail page, payment, checkout, user authenication page, user profile and more. I am also experienced with UI framework migration. I helped VW to migrade its UI framework from Vue 2 to react and next.js. As you can see, I am experienced with Javascript, react, nextJS, vue and other UI realated technologies. if you are interested in any specific part of my experiences, we can start from there.
+Hi, my name is Guanggeng Yang. I'm the lead frontend developer at Vibrant Wellness. I have been here for 4 years. I led the design and development of our entire ecommerce web platform, I implemented E-Commerce Core Features such as the product and product detail page, shopping cart, checkout flow, payment, user authenication, user profile and more. I am also experienced with UI framework migration. I helped VW to migrade its UI framework from Vue 2 to react and next.js that enhence the web prefromance and SEO. As you can see, I am experienced with Javascript, react, nextJS and other UI realated technologies. if you are interested in any specific part of my experiences, we can start from there.
 
 **Why are you looking for new opportunities? why are you looking for new job?**
 

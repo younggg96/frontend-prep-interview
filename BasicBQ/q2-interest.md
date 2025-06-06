@@ -5,5 +5,5 @@ I’m really excited about this role because it fits my background in frontend a
 
 What do you know about our company or product?
 
-Yeah! I know that OKX is one of the top global crypto exchanges, and you're also doing a lot in the Web3 space—like DeFi, NFTs, and wallets.
+Yeah! I know that OKX is one of the top global crypto exchanges, and you're also doing a lot in the Web3 space.
 I really admire how you're building a fast, scalable platform for millions of users. As someone who cares about performance and frontend architecture, I find that super exciting.

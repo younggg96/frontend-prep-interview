@@ -1,7 +1,7 @@
 项目经验
 Can you tell me about a project you worked on recently?
 （可以介绍一个你最近做过的项目吗？）
-Sure! One of the most impactful projects I worked on was at Vibrant Wellness. I led the frontend rearchitecture of their e-commerce platform from the ground up. The old system was built with Vue 2 and had issues like slow builds, poor SEO, and inconsistent UI.
+Sure! One of the most impactful projects I worked on was at Vibrant Wellness. I led the frontend rearchitecture of their e-commerce platform from 0 to launch. The old system was built with Vue 2 and had issues like slow builds, poor SEO, and inconsistent UI.
 I redesigned the architecture using React, Next.js, and Tailwind CSS, and implemented SSR and SSG for better performance and SEO. We also introduced component-based development and reusable patterns, which helped improve team efficiency and code quality.
 As the frontend tech lead, I handled everything from architecture planning to mentoring junior devs. Within three months of launch, organic traffic went up by 30%. I’m proud because I took ownership from zero to launch and made a measurable business impact.
 
