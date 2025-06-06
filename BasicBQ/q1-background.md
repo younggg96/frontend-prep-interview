@@ -9,6 +9,16 @@ Hi, my name is Guanggeng Yang. I'm the lead frontend developer at Vibrant Wellne
 
 As I just said, I have been at VW for more than 4 years. I led the design and development of our entire web appilication. At this point in my career at VW, my job duties have become less challenging and more repetitive. I often found myself doing the same thing every day and did not have time to learn new technologies. So it is time for me to look outside opportunities to further my skill sets and career. I heard from Scott, who is also working at OKX, that OKX is looking for a front end developer. He told me about the fast pacing environment at OKX. I think it would be a perfect opportunity for me to challenge myself and learn more cutting edge technologies
 
+
+**I noticed you were working at two companies at the same time—can you explain that?**
+
+Yes, I’m glad you asked. During that period, I was transitioning into a full-time role at Vibrant Wellness while continuing to support Alexander-Anderson in a part-time remote capacity.
+At Vibrant, I was responsible for leading the frontend development of a new e-commerce platform. Meanwhile, I continued maintaining and shipping updates for the mobile app I had previously built for Alexander-Anderson.
+I treated both roles seriously, set clear boundaries for time and priorities, and ensured that all deliverables were met with quality.
+This experience really strengthened my ability to manage multiple responsibilities, communicate across teams.
+
+
+
 ### ✅ **可以加入的 Feature 清单（英文）**
 
 #### 🛒 E-Commerce Core Features
