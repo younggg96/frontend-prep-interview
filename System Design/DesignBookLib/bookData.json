@@ -1,0 +1,33 @@
+{
+  "B": [
+    {
+      "id": "89250e97-06ec-40f7-8780-ab2cc690f391",
+      "title": "Fahrenheit 451",
+      "author": {
+        "firstName": "Ray",
+        "lastName": "Bradbury"
+      },
+      "year": 1953
+    }
+  ],
+  "C": [
+    {
+      "id": "0842e55d-edd9-42f5-8f86-4627dc243771",
+      "title": "The Hunt for Red October",
+      "author": {
+        "firstName": "Tom",
+        "lastName": "Clancy"
+      },
+      "year": 1990
+    },
+    {
+      "id": "caa0f044-05b4-4b2e-bc69-0e97451905bc",
+      "title": "Algorithms Unlocked",
+      "author": {
+        "firstName": "Thomas H.",
+        "lastName": "Cormen"
+      },
+      "year": 2013
+    }
+  ]
+}
