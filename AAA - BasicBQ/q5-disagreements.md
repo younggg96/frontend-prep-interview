@@ -1,4 +1,4 @@
-How do you handle disagreements with colleagues or managers?
+# How do you handle disagreements with colleagues or managers?
 当与同事或上级意见不一致时你如何处理？
 
 Answer (EN):
