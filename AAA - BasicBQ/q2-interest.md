@@ -7,8 +7,7 @@ That why i am interested in this role
 
 What do you know about our company or product?
 
-In my next role, I’m looking for an opportunity where I can work on meaningful, technically challenging products — especially at the intersection of AI and user experience. I’m especially excited about building advanced user interfaces that help people understand and interact with complex data, like video or  content.
-我想加入一家有使命感且技术挑战大的公司，希望深入参与前端架构设计、AI 视频数据可视化，以及提升用户体验的工作
+In my next role, I’m looking for an opportunity where I can work on meaningful, technically challenging products. I’m especially excited about building advanced user interfaces that help people understand and interact.
 
 That’s one of the reasons I’m really interested in Twelve Labs. I admire the mission of making video searchable and understandable at scale, and I’d love to contribute to building the frontend systems that bring this intelligence to users in a usable, performant, and elegant way.
 

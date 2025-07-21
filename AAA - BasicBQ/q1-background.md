@@ -22,13 +22,8 @@ As I just said, I have been at Vibrant Wellness for 4+ years. I led the design a
 I often found myself doing the same thing every day and didn’t have time to learn new technologies.
 So it’s time for me to look outside opportunities to further my skills and career.
 
-I have always admired Netflix not just for the scale of platform but for its culture.
-I just read the culture memo and I really appreciate how much the company values Selflessness, creativity, open feedback, high-performance.
-
 I like that kind of environment because I like working with people who care about what they do and push each other to do great work.
 So I think it would be an amazing place to keep growing, take on new challenges, and work in a storng team.
-
-
 
 
 # 3. I noticed you were working at two companies at the same time—can you explain that?
