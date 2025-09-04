@@ -1,4 +1,37 @@
 # 5. 行为和团队协作
+
+## How do you typically work within a team? （你平时在团队中是如何工作的？）
+In my current role at Vibrant Wellness, I am the frontend tech lead in a cross-functional team, working closely with product managers, designers, and backend engineers.
+
+I lead the development of our frontend architecture, focusing on a scalable Design System and performance improvements like SSR and hydration optimization, while also driving feature delivery and building reusable UI components.
+
+I also take on leadership responsibilities—like setting technical direction, and mentoring teammates.
+
+We work in agile sprints, and I actively participate in planning, estimation, and breaking down epics into deliverable stories.
+
+I work closely with designers to ensure pixel-perfect, accessible UIs. Work with product managers to break down features, clarify edge cases, and ensure alignment between user needs and technical constraints. With backend engineers, I help define scalable, cacheable APIs.
+We usually align early on data structures, for example, we discuss pagination, filtering, and edge caching needs—especially for SSR pages. I often provide feedback from the frontend side, like how API shape affects hydration performance or User experiences.
+
+Outside of feature work, I also help improve team efficiency by building shared tools, writing docs, and running things like pairing sessions. It’s all about helping the team move faster.
+
+## What does a typical workday look like for you?（你的一天通常是怎么安排的？）
+Answer:
+A typical day starts with checking Slack and reviewing open PRs or Sentry alerts. We usually have a quick standup or async updates.
+
+Then I’ll focus on either feature implementation (like building reusable components or integrating APIs) or cross-cutting work like performance tuning or accessibility testing.
+
+I also spend time reviewing teammates’ code, and pairing with our designer to iterate on tricky UI details. A few times a week I’ll jump into design system support or mentor junior engineers.
+
+At the end of the day, I usually track metrics on GA to see how the changes we shipped are performing.
+
+## How do you collaborate with designers and backend engineers?（你是如何与设计师和后端工程师协作的？）
+Answer:
+For designers, I partner early—reviewing Figma files, offering feedback on feasibility, and aligning on tokens and components. We use Figma Tokens + Tailwind CSS to maintain design–code consistency, and I demo implementation in Storybook for early feedback.
+
+With backend engineers, I align on data contracts and API shape early on. I often write interface schemas or test mock endpoints before the backend is ready. I also give feedback on how APIs impact frontend performance, caching, or SSR rendering.
+
+This close collaboration helps us move fast without back-and-forth delays.
+
 ## Can you describe your working style in a team?
 I’m a collaborative and transparent team player. I like to align early on goals and scope, and I make sure to communicate clearly during standups and code reviews. I enjoy pair programming when needed, and I often help break down tasks so the team can move faster. I also value feedback—both giving and receiving—because it helps us improve together.
 
