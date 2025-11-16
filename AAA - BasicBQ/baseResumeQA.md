@@ -7,7 +7,7 @@
 Q1: What were the main technical challenges you faced when migrating from Vue 2 to Next.js/React? How did you overcome them?
 
 Answer (EN):
-One major challenge was rethinking component structure and state management to align with React’s unidirectional data flow and hooks-based paradigm. I had to refactor legacy Vue code that heavily relied on two-way binding and global mixins into modular React components using useState, useEffect, and custom hooks. Another challenge was rebuilding routing and SSR behavior. I leveraged Next.js’s file-based routing and server-side rendering (SSR) features, optimizing hydration and load performance. I also ensured SEO consistency by preserving semantic markup and meta configurations during the transition.
+One major challenge was rethinking component structure and state management to align with React’s unidirectional data flow and hooks-based paradigm. I had to refactor legacy Vue code that heavily relied on two-way binding and global mixins into modular React components using useState, useEffect, and customized hooks. Another challenge was rebuilding routing and SSR behavior. I leveraged Next.js’s file-based routing and server-side rendering (SSR) features, optimizing hydration and load performance. I also ensured SEO consistency by preserving semantic markup and meta configurations during the transition.
 
 中文翻译：
 一个主要挑战是需要重新设计组件结构和状态管理方式，使其符合 React 的单向数据流和基于 hooks 的模式。我将大量依赖双向绑定和全局 mixin 的 Vue 旧代码重构为使用 useState、useEffect 和自定义 hook 的模块化 React 组件。另一个挑战是重建路由和 SSR 行为。我利用了 Next.js 的文件式路由和服务器端渲染功能，优化了 hydration 和加载性能。同时在迁移过程中也保留了语义化标签和 meta 配置，确保了 SEO 一致性。

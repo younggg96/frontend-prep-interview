@@ -2,7 +2,7 @@
 ## Can you tell me about a project you worked on recently?
 （可以介绍一个你最近做过的项目吗？）
 
-Sure! One of the projects I worked recently was at Vibrant Wellness. I led the frontend rearchitecture from 0 to production. The old system was built by using Vue 2 and had issues like slow loading, poor SEO, and inconsistent UI.
+Sure! One of the projects I worked recently was at Vibrant Wellness. I led the frontend re-development from 0 to production. The old system was built by using Vue 2 and had issues like slow loading, poor SEO, and inconsistent UI.
 
 I redesigned the architecture using React, Next.js, and implemented SSR and SSG for better performance and SEO. 
 
