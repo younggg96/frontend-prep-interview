@@ -15,16 +15,14 @@ I’ve led frontend rearchitecture projects before, built component systems from
 Ultimately, I want to be part of a world-class team solving hard problems and delivering elegant, performant interfaces that empower people to create and communicate in new ways. Adobe feels like the perfect place to make that impact.
 
 
+## why zoox
 
----
+I’m interested in Zoox because it’s one of the only companies pursuing autonomous mobility in a fully integrated way — the vehicle, the autonomy stack, and the fleet operations ecosystem are all designed together. That creates a level of technical depth and real-world impact that’s hard to find anywhere else.
 
-## **Why Netflix? / 对公司的兴趣**
+I’m particularly like this Operational Tools role because it sits at the core of how the robotaxi service works day-to-day. The idea of building web applications that operators, safety teams, and engineers rely on in real time is something I find extremely meaningful.
 
-I’m really excited about this opportunity because it aligns closely with my background in frontend engineering, performance optimization, and building scalable UI systems. I’ve led projects where the goal was to create clean, performant, and user-friendly experiences at scale, and I see this role at Netflix as a perfect opportunity to bring that experience to a product that reaches hundreds of millions of people around the world.
+My background aligns well with this: I’ve spent the past few years building performance-critical frontends, migrating large systems, optimizing latency, and designing tools that help users understand live system behavior — all of which connect directly to fleet monitoring and operations.
 
+Finally, I really value the collaborative nature mentioned in the job description. I enjoy working closely with product, design, backend, and operators to ship tools that are truly used in the field.
 
-I’ve always admired Netflix, not just as a product I use every day, but also for how it sets the standard in streaming and user experience. What excites me about this role is the chance to work on something that reaches millions of people and directly shapes how they discover and enjoy content.
-
-I enjoy building clean, fast, and user-friendly web experiences, and I see a strong match between what I’ve done in frontend performance and system design with what the Web Discovery team is focused on. For me, it’s not just about the technology, but about creating something people love to use—and Netflix feels like the perfect place to do that.
-
----
+Overall, Zoox’s mission and this role match both the kind of technical challenges I enjoy and the type of real-world impact I want to have.
