@@ -17,6 +17,7 @@ import Parent from "./questions/Communicate";
 import TicTacToe from "./components/TicTacToe/TicTacToe";
 import FileSystem from "./components/FileSystem/FileSystem";
 import { ExampleUseCallback2 } from "./reactHooks/ExampleUseCallback2";
+import SimpleImages from "./components/SimpleImages"
 
 const UseHookComponents = () => {
   const [time, setTime] = useState(0);
@@ -28,9 +29,9 @@ const UseHookComponents = () => {
   // }, 1000);
   return (
     <>
-      <ExampleUseCallback />
+      {/* <ExampleUseCallback />
       <ExampleUseCallback2 />
-      <ExampleUseMemo />
+      <ExampleUseMemo /> */}
       {/* <header className="App-header"> Hello world </header> */}
       {/* <Counter /> */}
       {/* <ExampleUseEffect /> */}
@@ -56,7 +57,8 @@ const UseHookComponents = () => {
 function App() {
   return (
     <div className="App">
-      <UseHookComponents />
+      <SimpleImages />
+      {/* <UseHookComponents /> */}
       {/* <TicTacToe /> */}
       {/* <FileSystem /> */}
     </div>
